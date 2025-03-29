@@ -15,7 +15,7 @@ The pipeline follows a modular architecture:
 3. **Data Storage**: Stores the transformed data in AWS.
 4. **Data Analysis**: Enables querying and visualization of the data.
 
-![Architecture Diagram](images/architecture_diagram.png)
+![Architecture Diagram](Images/Architecture.png)
 
 ## Note on Automation
 The pipeline is fully automated using AWS Lambda and Step Functions. However, triggers and database storage might have been temporarily disabled to reduce costs and database space. To re-enable them:
@@ -74,14 +74,17 @@ To store data in AWS RDS or DynamoDB:
 - Configure the database connection string.
 
 ## Sample Outputs
-### Album DataFrame
-![Album DataFrame](images/album_dataframe.png)
+### Data Extraction
+![Data Extraction](Images/data_extract.png)
 
-### Artist DataFrame
-![Artist DataFrame](images/artist_dataframe.png)
+### Data Transform
+![Data Transform](Images/data_transform.png)
 
-### Song DataFrame
-![Song DataFrame](images/song_dataframe.png)
+### Processed Data
+![Processed Data](Images/processed_data.png)
+
+### Transformed Album Data
+![Transformed Album Data](Images/transformed_data_album_data.png)
 
 ## Future Enhancements
 - Add support for additional Spotify data (e.g., user data, playlists).
